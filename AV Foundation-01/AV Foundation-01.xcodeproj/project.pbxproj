@@ -15,6 +15,7 @@
 		476906FF1F89113000B5A763 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 476906FD1F89113000B5A763 /* LaunchScreen.storyboard */; };
 		4769070A1F89113000B5A763 /* AV_Foundation_01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 476907091F89113000B5A763 /* AV_Foundation_01Tests.m */; };
 		476907151F89113000B5A763 /* AV_Foundation_01UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 476907141F89113000B5A763 /* AV_Foundation_01UITests.m */; };
+		47D6DC191F8A02A700178C3C /* THSpeechController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D6DC181F8A02A700178C3C /* THSpeechController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		476907101F89113000B5A763 /* AV Foundation-01UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AV Foundation-01UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		476907141F89113000B5A763 /* AV_Foundation_01UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AV_Foundation_01UITests.m; sourceTree = "<group>"; };
 		476907161F89113000B5A763 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47D6DC171F8A02A700178C3C /* THSpeechController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THSpeechController.h; sourceTree = "<group>"; };
+		47D6DC181F8A02A700178C3C /* THSpeechController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THSpeechController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				476906F31F89113000B5A763 /* AppDelegate.m */,
 				476906F51F89113000B5A763 /* ViewController.h */,
 				476906F61F89113000B5A763 /* ViewController.m */,
+				47D6DC171F8A02A700178C3C /* THSpeechController.h */,
+				47D6DC181F8A02A700178C3C /* THSpeechController.m */,
 				476906F81F89113000B5A763 /* Main.storyboard */,
 				476906FB1F89113000B5A763 /* Assets.xcassets */,
 				476906FD1F89113000B5A763 /* LaunchScreen.storyboard */,
@@ -276,6 +281,7 @@
 				476906F71F89113000B5A763 /* ViewController.m in Sources */,
 				476906F41F89113000B5A763 /* AppDelegate.m in Sources */,
 				476906F11F89113000B5A763 /* main.m in Sources */,
+				47D6DC191F8A02A700178C3C /* THSpeechController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +513,7 @@
 				4769071B1F89113000B5A763 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4769071C1F89113000B5A763 /* Build configuration list for PBXNativeTarget "AV Foundation-01Tests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +522,7 @@
 				4769071E1F89113000B5A763 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4769071F1F89113000B5A763 /* Build configuration list for PBXNativeTarget "AV Foundation-01UITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +531,7 @@
 				476907211F89113000B5A763 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

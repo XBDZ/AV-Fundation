@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "THSpeechController.h"
 @interface ViewController ()
 
 @end
@@ -17,8 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+   
+}
+- (IBAction)playAction:(UIButton *)sender {
     
-    NSLog(@"asd");
+    THSpeechController * sppeech = [THSpeechController speechController];
+    [sppeech beginConversation];
+    
 }
 
 
