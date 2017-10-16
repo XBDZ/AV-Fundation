@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18EFE3431F9451430060049B /* THPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EFE3421F9451430060049B /* THPlayerController.m */; };
 		476907301F89125300B5A763 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4769072F1F89125300B5A763 /* main.m */; };
 		476907331F89125300B5A763 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 476907321F89125300B5A763 /* AppDelegate.m */; };
 		476907361F89125300B5A763 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 476907351F89125300B5A763 /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18EFE3411F9451430060049B /* THPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPlayerController.h; sourceTree = "<group>"; };
+		18EFE3421F9451430060049B /* THPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPlayerController.m; sourceTree = "<group>"; };
 		4769072B1F89125300B5A763 /* AV foundation-02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AV foundation-02.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4769072F1F89125300B5A763 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		476907311F89125300B5A763 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,6 +108,8 @@
 				476907321F89125300B5A763 /* AppDelegate.m */,
 				476907341F89125300B5A763 /* ViewController.h */,
 				476907351F89125300B5A763 /* ViewController.m */,
+				18EFE3411F9451430060049B /* THPlayerController.h */,
+				18EFE3421F9451430060049B /* THPlayerController.m */,
 				476907371F89125300B5A763 /* Main.storyboard */,
 				4769073A1F89125300B5A763 /* Assets.xcassets */,
 				4769073C1F89125300B5A763 /* LaunchScreen.storyboard */,
@@ -273,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18EFE3431F9451430060049B /* THPlayerController.m in Sources */,
 				476907361F89125300B5A763 /* ViewController.m in Sources */,
 				476907331F89125300B5A763 /* AppDelegate.m in Sources */,
 				476907301F89125300B5A763 /* main.m in Sources */,
@@ -507,6 +513,7 @@
 				4769075A1F89125300B5A763 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4769075B1F89125300B5A763 /* Build configuration list for PBXNativeTarget "AV foundation-02Tests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +522,7 @@
 				4769075D1F89125300B5A763 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4769075E1F89125300B5A763 /* Build configuration list for PBXNativeTarget "AV foundation-02UITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +531,7 @@
 				476907601F89125300B5A763 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
