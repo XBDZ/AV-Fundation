@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18C610A71F946B1800C2A313 /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C610A61F946B1800C2A313 /* libc++abi.tbd */; };
 		18EFE3431F9451430060049B /* THPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EFE3421F9451430060049B /* THPlayerController.m */; };
+		18FB20DD1F97291300B61683 /* bass.caf in Resources */ = {isa = PBXBuildFile; fileRef = 18FB20DA1F97291300B61683 /* bass.caf */; };
+		18FB20DE1F97291300B61683 /* drums.caf in Resources */ = {isa = PBXBuildFile; fileRef = 18FB20DB1F97291300B61683 /* drums.caf */; };
+		18FB20DF1F97291300B61683 /* guitar.caf in Resources */ = {isa = PBXBuildFile; fileRef = 18FB20DC1F97291300B61683 /* guitar.caf */; };
 		476907301F89125300B5A763 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4769072F1F89125300B5A763 /* main.m */; };
 		476907331F89125300B5A763 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 476907321F89125300B5A763 /* AppDelegate.m */; };
 		476907361F89125300B5A763 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 476907351F89125300B5A763 /* ViewController.m */; };
@@ -36,8 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18C610A61F946B1800C2A313 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
 		18EFE3411F9451430060049B /* THPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPlayerController.h; sourceTree = "<group>"; };
 		18EFE3421F9451430060049B /* THPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPlayerController.m; sourceTree = "<group>"; };
+		18FB20DA1F97291300B61683 /* bass.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bass.caf; sourceTree = "<group>"; };
+		18FB20DB1F97291300B61683 /* drums.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = drums.caf; sourceTree = "<group>"; };
+		18FB20DC1F97291300B61683 /* guitar.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = guitar.caf; sourceTree = "<group>"; };
 		4769072B1F89125300B5A763 /* AV foundation-02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AV foundation-02.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4769072F1F89125300B5A763 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		476907311F89125300B5A763 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C610A71F946B1800C2A313 /* libc++abi.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18C610A51F946B1800C2A313 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18C610A61F946B1800C2A313 /* libc++abi.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		476907221F89125300B5A763 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +105,7 @@
 				476907471F89125300B5A763 /* AV foundation-02Tests */,
 				476907521F89125300B5A763 /* AV foundation-02UITests */,
 				4769072C1F89125300B5A763 /* Products */,
+				18C610A51F946B1800C2A313 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +132,9 @@
 				4769073A1F89125300B5A763 /* Assets.xcassets */,
 				4769073C1F89125300B5A763 /* LaunchScreen.storyboard */,
 				4769073F1F89125300B5A763 /* Info.plist */,
+				18FB20DA1F97291300B61683 /* bass.caf */,
+				18FB20DB1F97291300B61683 /* drums.caf */,
+				18FB20DC1F97291300B61683 /* guitar.caf */,
 				4769072E1F89125300B5A763 /* Supporting Files */,
 			);
 			path = "AV foundation-02";
@@ -212,7 +233,13 @@
 				TargetAttributes = {
 					4769072A1F89125300B5A763 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3RSFF4Y3L5;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					476907431F89125300B5A763 = {
 						CreatedOnToolsVersion = 8.0;
@@ -251,7 +278,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18FB20DF1F97291300B61683 /* guitar.caf in Resources */,
+				18FB20DE1F97291300B61683 /* drums.caf in Resources */,
 				4769073E1F89125300B5A763 /* LaunchScreen.storyboard in Resources */,
+				18FB20DD1F97291300B61683 /* bass.caf in Resources */,
 				4769073B1F89125300B5A763 /* Assets.xcassets in Resources */,
 				476907391F89125300B5A763 /* Main.storyboard in Resources */,
 			);
@@ -430,7 +460,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3RSFF4Y3L5;
 				INFOPLIST_FILE = "AV foundation-02/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Foundation.com.AV-foundation-02";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,7 +473,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3RSFF4Y3L5;
 				INFOPLIST_FILE = "AV foundation-02/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Foundation.com.AV-foundation-02";
 				PRODUCT_NAME = "$(TARGET_NAME)";

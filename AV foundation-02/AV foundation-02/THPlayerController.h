@@ -8,9 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol THPlayerControllerDelegate <NSObject>
+
+-(void)playbackStopped;
+-(void)playbackBegin;
+
+@end
+
 @interface THPlayerController : NSObject
 
-@property(nonatomic,readonly,getter=isPlaring) BOOL playing;
+@property(nonatomic,readonly,getter=isPlaying) BOOL playing;
+
+@property(nonatomic,weak)id<THPlayerControllerDelegate>delegate;
 
 
 -(void)play;

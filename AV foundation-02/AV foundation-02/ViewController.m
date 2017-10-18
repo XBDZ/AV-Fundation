@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
-
+#import "THPlayerController.h"
+#import <AVFoundation/AVFoundation.h>
 @interface ViewController ()
+
+//必须强引用
+@property(nonatomic,strong)THPlayerController *playerVC;
 
 @end
 
@@ -16,8 +20,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.playerVC = [[THPlayerController alloc]init];
+    
+    
 }
+
+- (IBAction)playAction:(UIButton *)sender {
+
+    if (!self.playerVC.isPlaying) {
+        [self.playerVC play];
+    }
+}
+
+- (IBAction)stopAction:(UIButton *)sender {
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+   
+    
+}
+
 
 
 - (void)didReceiveMemoryWarning {
